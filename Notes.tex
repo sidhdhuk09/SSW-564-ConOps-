@@ -7,7 +7,13 @@
 The primary purpose of this project is to protect stakeholders from falling victim to deceptive clauses in contracts that may undermine their best interests, either intentionally or unintentionally or via other disruptive means. These clauses could cause harm to the signing party through various means, such as monetary loss or other negative consequences that may impact the livelihood of the concerned stakeholder as a whole. 
 
 \section{Key Stakeholders \label{Section::Key Stakeholders} }
-
+The key stakeholders for our project are as follows: 
+\begin{itemize}
+    \item Direct daily consumers: Direct daily customers are individuals who want to protect themselves against being misled by fraudulent companies. By identifying potentially fraudulent phrases in contracts, Clauseguard adds an extra degree of security for these clients. Direct daily clients who utilize Clauseguard can be secure that they are getting fair deals and can stay out of trouble by doing so.
+    \item Commercial enterprises: Clauseguard is a tool that commercial enterprises can employ to shield themselves from any legal responsibilities. Enterprises can find and remove potentially fraudulent clauses from their contracts by analyzing them using natural language processing tools. This can assist them in adhering to the law and ensuring that they are not taking part in any fraudulent activity.
+    \item Criminal lawyers: As part of their legal investigations, criminal attorneys might use Clauseguard to find fraudulent clauses in contracts. Criminal attorneys can find probable fraud evidence in contracts by employing natural language processing tools to analyze contracts. This information can then be utilized to support a case against dishonest businesses.
+    \item Law enforcement: Clauseguard can be used by law enforcement organizations to find possibly fraudulent activity taking place within businesses. Law enforcement organizations can find potential fraud evidence through the analysis of contracts, which can then be utilized to support a case against dishonest businesses. This can ensure that firms run fairly and transparently and protect consumers.
+\end{itemize}
 
 
 
@@ -15,12 +21,12 @@ The primary purpose of this project is to protect stakeholders from falling vict
 \section{Key Drivers \label{Section::Key Drivers} }
 The key drivers for our project ClauseGuard are as follows: 
 \begin{itemize}
-    \item Data Avialiability: A large dataset of already availavble online documents helped bring this project to fruition. Although a large dataset is present, the average person would need extensive knowledge in legal studies to understand the implications of it. 
+    \item Data Availability: A large dataset of already available online documents helped bring this project to fruition. Although a large dataset is present, the average person would need extensive knowledge in legal studies to understand the implications of it. 
     \item Emotional Motivations: Our team was motivated to select this project based on personal experiences that we faced. Several of our friends and family members have previously fallen victim to deceptive contractual terms leading to significant hardships and losses in physical, financial and mental areas. 
     \item Changing Legal Landscape: In today's fast-paced and dynamic legal landscape, laws and regulations are subject to frequent updates and revisions. These changes have a direct impact on businesses, individuals, and content creators, making it imperative for them to stay informed and compliant.
 
 A prime example of such legal regulatory changes is the introduction of bill C-11 in Canada. This legislation imposes new obligations and responsibilities on content creators, emphasizing the importance of careful consideration regarding the content they produce and publish. The implementation of this bill necessitates a comprehensive understanding of the legal requirements and potential implications, compelling creators to seek reliable tools and resources that can assist them in navigating these complexities. 
-Such legal changes drive the need for a software like ClauseGuard. Its sophisticated capabilities enable users to effectively analyze and assess their contracts, identifying any deceptive or unclear clauses that may not align with the evolving legal landscape thereby preventing years of physical, financial and mental harships.
+Such legal changes drive the need for a software like ClauseGuard. Its sophisticated capabilities enable users to effectively analyze and assess their contracts, identifying any deceptive or unclear clauses that may not align with the evolving legal landscape thereby preventing years of physical, financial and mental hardships.
 
 \item Growing Need for Transparency and Fairness: There is a growing demand for greater transparency and fairness in legal agreements. By identifying potentially fraudulent or misleading clauses, the ClauseGuard system can help to increase transparency and fairness in contracts.
 
@@ -112,7 +118,7 @@ Such legal changes drive the need for a software like ClauseGuard. Its sophistic
     \end{itemize}
     \item Security Requirements: 
     \begin{itemize}
-        \item The system must implement RBAC ( Role-Based Access Control) or IAM( Identity Access Management) when leverage AWS services, allowing system administrators to define roles and permissions, ensuring that only authorized individuals have access to certain functionalities such as cloud infrastructure, model development, database acces etc. 
+        \item The system must implement RBAC ( Role-Based Access Control) or IAM( Identity Access Management) when leverage AWS services, allowing system administrators to define roles and permissions, ensuring that only authorized individuals have access to certain functionalities such as cloud infrastructure, model development, database access etc. 
         \item The system must ensure that the model training process itself does not introduce any vulnerability that could be exploited by reverse engineering a legacy version of the model. 
         \item An intrusion detection system will be integrated to monitor and alert for any potential security threats or breaches in real-time.
         \item The system must implement a stringent data retention policy, where uploaded contracts are not stored beyond the necessary time frame required for analysis.
@@ -131,7 +137,7 @@ Such legal changes drive the need for a software like ClauseGuard. Its sophistic
 
 
     \end{itemize}
-    \item Quality Reqirements: 
+    \item Quality Requirements: 
     \begin{itemize}
         \item The system must continuously track the model’s performance metrics against predefined benchmarks to ensure consistent quality of analysis.
         \item Beyond simple textual analysis, the system should ensure contextual accuracy, recognizing that the same phrase might have different implications in different types of contracts.
@@ -176,12 +182,238 @@ The requirements validation and analysis for ClauseGuard is as follows:
 
     
 \section{ User Interviews \label{Section::User Interviews} }
+We conducted user interviews with the following stakeholders. We used brainstorming, user stories and questionnaires to elicit requirements from the users which is highlighted below: 
+
+\begin{itemize}
+\item Date Conducted: 04/21/2023
+\item Place: In-person
+    \item Full Name: Hrishikesh Kathikar
+
+    \item Age: 22
+
+    \item Profession:Student 
+
+    \item Email:hakathikar@gmail.com
+
+    \item Question Asked : What kind of information would you like to see in terms and conditions to help you make a more informed decision?
+
+    \item Answer: highlighted information regarding privacy violations, information summarized in fewer points
+\end{itemize}
+\begin{itemize}
+\item Date Conducted: 04/22/2023
+\item Place: In-person
+    \item Full Name: Sai satvika
+
+    \item Age: 20
+
+    \item Profession:Student 
+
+    \item Email:satvikakongara@gmail.com
+
+    \item Question Asked : Do you think that companies should be required to use plain language in their terms and conditions?
+
+    \item Answer:Yes 
+\end{itemize}
 
 
 
+\begin{itemize}
+\item Date Conducted: 04/18/2023
+\item Place: In-person
+    \item Full Name: Mythri Shivakumar
+
+    \item Age: 22
+
+    \item Profession:Software Development Engineer 
+
+    \item Email:geetamythri27@gmail.com
+
+    \item Question Asked : Have you ever been in a situation where you felt like you were taken advantage of because of a clause in a contract?
+
+    \item Answer: Yes, plenty of times 
+\end{itemize}
+\begin{itemize}
+\item Date Conducted: 04/25/2023
+\item Place: In-person
+    \item Full Name: Yashwanth Vuppula  
+
+    \item Age: 19
+
+    \item Profession:Student 
+
+    \item Email:yashwanthvuppula88@gmail.com
+
+    \item Question Asked : How do you think that a tool like Clauseguard could benefit you personally?
+
+    \item Answer: Would make it easier for me to sign up more.
+\end{itemize}
+\begin{itemize}
+\item Date Conducted: 04/24/2023
+\item Place: Online
+    \item Full Name: Shubham Raj
+
+    \item Age: 21
+
+    \item Profession:Unity Programmer 
+
+    \item Email:shubhamraj2001@gmail.com
+
+    \item Question Asked : Do you regularly register or sign up for applications and websites?
+
+    \item Answer: yes
+
+    \item Question: If yes, on a scale one to 10 how often do you register
+    \item Answer: 10
+
+    \item Question: What kind of information would you like to see in terms and conditions to help you make a more informed decision?
+
+    \item Answer: Data collection, my account details and photos won't be used after I deactivate my account
+
+    \item Question: Do you think that companies should be required to use plain language in their terms and conditions?
+
+    \item Answer: Yes, so that its easy for every individual to understand. 
+
+    \item Question: Would you be willing to pay a fee to use a tool like Clauseguard to help protect yourself from fraudulent clauses?
+
+    \item Answer: Yes because it will help me saving a lot of money later down the line. 
+
+    \item Question: Have you ever been in a situation where you felt like you were taken advantage of because of a clause in a contract?
+
+    \item Answer: Yes
+
+    \item Question: How do you think that a tool like Clauseguard could benefit you personally?
+
+    \item Answer: It will help me make informed decisions and help me not sign up for applications that would otherwise waste my time. 
+
+    \item Question: Do you think that companies intentionally include fraudulent clauses in their contracts, or is it usually just a mistake?
+
+    \item Answer: Yes, they include fraud clauses intentionally so that they cant be held liable for any wrongdoings. 
+
+    \item Question: How do you think that awareness of fraudulent clauses can be increased among the general public?
+
+    \item Answer: By educating the public via news, podcasts, seminars, workshops
+
+    \item Question: Have you ever heard of any companies that are particularly notorious for including fraudulent clauses in their contracts?
+
+    \item Answer: Yes, Meta, Match.com
+
+    \item Question: How confident do you feel in your ability to detect fraudulent clauses in a contract on your own?
+
+    \item Answer: Not at all confident 
+
+    
+\end{itemize}
 
 
+\begin{itemize}
+\item Date Conducted: 04/27/2023
+\item Place: In-person
+    \item Full Name: Sameer Kaza
 
+    \item Age: 31
+
+    \item Profession: Senior Medical Engineering Specialist  
+
+    \item Email:Kzsam90@gmail.com
+
+    \item Question Asked : Do you regularly register or sign up for applications and websites?
+
+    \item Answer: NO
+
+    \item Question: If yes, on a scale one to 10 how often do you register
+    \item Answer: NO
+
+    \item Question: What kind of information would you like to see in terms and conditions to help you make a more informed decision?
+
+    \item Answer: I would like to see the terms and conditions be summarized at the top
+
+    \item Question: Do you think that companies should be required to use plain language in their terms and conditions?
+
+    \item Answer: Yes 
+
+    \item Question: Would you be willing to pay a fee to use a tool like Clauseguard to help protect yourself from fraudulent clauses?
+
+    \item Answer: Yes
+
+    \item Question: Have you ever been in a situation where you felt like you were taken advantage of because of a clause in a contract?
+
+    \item Answer: No
+
+    \item Question: How do you think that a tool like Clauseguard could benefit you personally?
+
+    \item Answer: Would make it easier for me to sign up more
+
+    \item Question: Do you think that companies intentionally include fraudulent clauses in their contracts, or is it usually just a mistake?
+
+    \item Answer: Not sure
+
+    \item Question: How do you think that awareness of fraudulent clauses can be increased among the general public?
+
+    \item Answer: By including the fraudulent history cases in the forms
+
+    \item Question: Have you ever heard of any companies that are particularly notorious for including fraudulent clauses in their contracts?
+
+    \item Answer: Cable companies
+
+    \item Question: How confident do you feel in your ability to detect fraudulent clauses in a contract on your own?
+
+    \item Answer: Pretty good
+
+
+    \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/responses-1.jpg}
+    \caption{responses-1 \ref{fig::responses-1}}
+    \label{fig::responses-1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/responses-2.jpg}
+    \caption{responses-2 \ref{fig::responses-2}}
+    \label{fig::responses-2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/responses-3.jpg}
+    \caption{responses-3 \ref{fig::responses-3}}
+    \label{fig::responses-3}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/responses-4.jpg}
+    \caption{responses-4 \ref{fig::responses-4}}
+    \label{fig::responses-4}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/responses-5.jpg}
+    \caption{responses-5 \ref{fig::responses-5}}
+    \label{fig::responses-5}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/responses-7.jpg}
+    \caption{responses-7 \ref{fig::responses-7}}
+    \label{fig::responses-7}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/responses-8.jpg}
+    \caption{responses-8 \ref{fig::responses-8}}
+    \label{fig::responses-8}
+\end{figure}
+
+
+    For Corporate lawyer, and law enforcement agency, we were unable to get any appointments for interviews. Hence, we asked chatgpt to act as a stakeholder. The conversations of those are given below: 
+
+    \begin{itemize}
+        \item Corporate Lawyer: 
+    \end{itemize}
+
+
+    
 \section{ Jira:Project Management Tool \label{Jira Project Management Tool} }
 Our team has used Jira which a project management tool to assign tasks and finish them on a weekly basis using sprints. 
 
@@ -206,3 +438,9 @@ Our team has used Jira which a project management tool to assign tasks and finis
 
 Our team used github for induce version changes and track previous versions. 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/github update-1.jpg}
+    \caption{Jira completion of tasks \ref{fig::github update-1.jpg}}
+    \label{fig::github update-1.jpg}
+\end{figure}
