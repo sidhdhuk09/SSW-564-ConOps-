@@ -4,3 +4,78 @@
 \index{Operational scenarios}
 \label{Chapter::Operational scenarios}}\
 
+A scenario can be defined as a  step-by-step description of how the proposed system should operate and interact with its users and its
+external interfaces under a given set of circumstances. The operational scenario for the following proposed system is outlined below
+\begin{itemize}
+    \item Normal Operation Scenario: The user navigates to the website, facilitated by a user-friendly interface designed for ease of use. They are greeted by clear instructions and prompts guiding them to upload a Terms and Conditions (T\&C) contract. This can be in various formats such as text, PDF, or LaTeX document, providing ample flexibility to the user.
+
+Once the contract is uploaded, the system initiates the preprocessing stage. This involves cleaning and formatting the text data, utilizing Natural Language Processing techniques such as tokenization, stemming, and lemmatization. This step ensures that the machine learning model receives the data in a suitable format for analysis.
+
+Upon completion of the preprocessing stage, the data is fed into the machine learning model, which has been trained on a vast dataset of T\&C contracts. The model thoroughly scrutinizes the clauses in the contract, identifying any potential deceptive or unclear clauses.
+
+The user then receives a comprehensive report, detailing the analysis results. The report includes a percentage counter indicating the proportion of potentially deceptive clauses found in the contract. Each flagged clause is highlighted, and clicking on it provides a brief explanation as to why it was flagged by the model.
+
+With this detailed insight, the user is better equipped to make an informed decision on whether to proceed with the contract. To proceed with the contract, is left upto the discretion of the user. 
+
+\item Stress handling scenario: A stress handling scenario occurs in a situation where multiple users simultaneously access the website, potentially leading to the analysis of millions of documents concurrently. In such high-demand situations, the system is designed to maintain operational efficiency, ensuring that all users receive a timely and accurate analysis of their contracts.
+
+To manage this high traffic, the system utilizes a sophisticated load balancing mechanism. This mechanism dynamically allocates system resources to different tasks based on demand, ensuring that no single task is overburdened. The load balancer distributes the workload across various system servers located on strategic geographic locations, preventing any bottlenecks or system slowdowns.
+
+Furthermore, the system is built with scalability in mind. It has the capacity to ramp up resources when demand surges, such as during peak usage hours. This ensures that even in times of heavy load, the system remains responsive and continues to deliver results promptly.
+
+Lastly, the system employs robust error handling techniques. In the rare event of a failure or error, the system is designed to recover gracefully, minimizing the impact on the user. Alerts are sent to the system administrators to ensure rapid response and resolution.
+
+Through these measures, the system can effectively manage stress scenarios, providing reliable, efficient service to all users, even during periods of peak demand.
+
+    \item Error handling Scenario: An error handling scenario comes into play when a user attempts to upload a contract in an unsupported file format. In such a situation, the system is designed to promptly identify the issue and respond appropriately and in a timely manner.
+
+Upon detecting an unsupported file format, the system triggers an error message. The system informs the user that the uploaded contract file format isn't supported and kindly prompts them to upload the contract again in a compatible format.
+
+In addition, this error message includes a list of the supported file formats for the user's convenience. This  approach not only resolves the issue at hand but also educates the user about the correct file formats, preventing the same error from reoccurring in the future.
+
+Furthermore, the system logs this error in a database. These logs are periodically reviewed by the system administrators to identify patterns and potential areas for system improvement. For instance, if a particular unsupported file format is frequently attempted by users, the team may consider adding support for that format in future system updates.
+
+Thus the error handling scenario is designed to be user-centric in its approach and its commitment to provide a seamless, intuitive user experience. 
+
+ \item Degraded Operation Scenario: A system degradation scenario comes into play when there's an unforeseen failure with the primary system. In such instances, our robust backup strategy ensures that service continuity is maintained, albeit the service may not be as robust as the primary model.
+
+Upon detection of a primary system failure, the system automatically transitions to a legacy version. This redundancy plan allows users to continue accessing the system and uploading contracts for analysis, ensuring that the primary functionality of the system. remains available. This would also ensure that there is no monetary loss to the organization in the event of a catastrophic system failure. 
+
+However, its important to note that while the legacy system is fully functional, it might not match the performance, accuracy, or feature set of the primary system. As it is an older version, it may process contracts more slowly, and its clause analysis might not reflect the most recent legal developments or algorithmic improvements.
+
+During this degraded mode operation, users will be informed about the temporary switch to the legacy system via a notification on the website. This message reassures them that services are still operational, but also sets appropriate expectations about the temporary limitations they might experience.
+
+Meanwhile, our dedicated team of technicians would be alerted to the issue and would begin troubleshooting the primary system. The goal would be to restore the primary system to full functionality as quickly as possible to minimize the time users spend operating under the degraded mode.
+
+This degradation scenario works towards highlighting our commitment to service reliability and continuity. We understand that our users depend on our system, and we have contingency plans in place to ensure that unexpected issues don't interrupt the availability of our services.
+
+    \item Emergency Scneranio: In the event of a security breach, our system swiftly transitions to a minimally functioning mode to prioritize data protection and system integrity.
+
+Upon detecting a potential security threat, our system automatically triggers its emergency protocol. This protocol includes limiting user access, suspending non-essential operations, and activating enhanced security measures. The aim is to isolate the breach, protect sensitive data, and prevent further unauthorized access to ensure no confidential or sensitive data is leaked.
+
+During this emergency mode, users may encounter restricted functionality. Access to majority of the services might be temporarily suspended , and the overall system performance may be reduced. However, these measures are critical to maintaining the security of the system and safeguarding user's data.
+
+Simultaneously, our cybersecurity team would be alerted to the situation. These experts would immediately initiate an investigation into the breach, working tirelessly to neutralize the threat and restore the system to full functionality. Users would be notified about the situation and would be kept informed about progress towards resolution.
+
+This emergency scenario highlights our commitment to data security and system integrity. We understand the critical importance of protecting sensitive information, and our system is designed to respond effectively to any security threats, minimizing potential damage and disruption.
+
+    \item Backup Scenario: In circumstances where data integrity is compromised, due to a security breach, system error, or data corruption, or unethical stakeholders trying to  gain access, the system would resort to its backup protocols to ensure data preservation and service continuity.
+
+Our system routinely creates secure backups of all operational data. These backups are securely encrypted and stored off-site to ensure data safety. The frequency of these backups is decided based on the criticality and volume of the data, ensuring minimal data loss in case of unexpected events.
+
+Upon the detection of any data corruption or loss, the system triggers its backup recovery procedure. The most recent unaltered backup is identified, and the data is seamlessly restored to the system. During this process, the system may operate in a limited capacity to ensure the stability and accuracy of the data restoration process.
+
+Meanwhile, our dedicated teams would work on identifying and rectifying the cause of the data loss or corruption, making sure the same issue does not recur. Users are kept informed of the situation and provided with any necessary guidelines or precautions to ensure their data safety.
+
+This backup scenario is an integral part of our commitment to providing a reliable and secure service.
+    \item Maintenance Scenario: In the interest of continuous improvement and to ensure optimal performance, the system is periodically placed into a maintenance mode. During these scheduled maintenance periods, updates are performed, enhancements are made, bugs are addressed, and routine checks are conducted to ensure the overall health and security of the system.
+
+These maintenance events are carefully planned and scheduled during periods of expected low usage to minimize inconvenience for our users. Advance notifications are sent to users to inform them about the maintenance schedule and the expected duration of downtime. The importance of the service is understood and the every effort is being made to keep these periods as brief as possible.
+
+During maintenance, the system might be temporarily unavailable or operate with limited functionality. However, these periods are crucial for implementing system upgrades, installing security patches, and performing hardware checks, all aimed at providing a seamless, secure, and efficient service.
+
+Upon completion of maintenance, the system returns to its normal operational state. Users are promptly notified that they can resume using the service as usual. Our dedicated support team remains available to address any queries or concerns users may have post-maintenance.
+
+This maintenance scenario is vital to maintaining the high standards of our system, safeguarding data, and offering an enhanced user experience. It reflects our commitment to delivering a reliable, secure, and up-to-date service to all our users.
+\end{itemize}
+

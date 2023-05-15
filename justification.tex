@@ -7,19 +7,134 @@
 
 
 \section{Justification of changes  \label{Section::Justification of changes} }
+Justification for the changes of the proposed systems is outlined below: 
+\begin{itemize}
+    \item New or modified aspects: The rapidly changing legal landscape and increasing complexity and ambuity in T\&C contracts propelled the need for an efficent and reliable system that can adapt and and update itself based on the latest laws and guidelines. 
+    \item Limitations of the current systems: At the moment, most contracts are manually reviewed by legal professionsals. This process is time0consuming, tedious and prone to error. Furthermore, the interpretation of different terms and conditions may vary between different individuals leading to inconsistancies in evaluations. 
 
+    \subsection{Justification for a new or modified system}
+    Clauseguard can effectively counter the challenges faced by the current system as outlined below: 
+    \begin{itemize}
+        \item With the advent of the COVID-19 pandemic, there has been a significant uptick in the usage of digital contracts. This transition has led to a surge in data volumes that traditional methods of review cannot efficiently handle. ClauseGuard's machine learning model, with its inherent ability to process and analyze vast amounts of data swiftly and accurately, stands to offer an invaluable service in this context. It can help stakeholders navigate through the labyrinth of digital contracts, ensuring they are informed and protected. This capability is not just a convenience; it is a necessity in the rapidly digitizing world, where the velocity and volume of contractual agreements are ever-increasing. 
+        \item The machine learning system aims to automate the evaluation of contracts, significantly reducing the time and resources required, thereby leading to lower operational costs. It can also improve consistency in evaluations by reducing subjective human interpretation.
+        \item The capability to autonomously detect deceptive or unclear clauses within contracts has become increasingly necessary in today's rapidly evolving legal landscape. Contracts are becoming more intricate and are subject to frequent revisions due to changing regulations and business practices. These complexities often make it challenging for individuals to fully comprehend the terms, leading to potential misinterpretations and unintended commitments. An automated system that can reliably dissect and interpret these complexities not only promotes transparency but also serves as a protective measure for stakeholders. 
+    \end{itemize}
+    
+\end{itemize}
 
 
 \section{Description of desired changes \label{Section::Description of desired changes}}
+Clauseguard has a number of capabilites, interfaces and personel changes which are highlighted below: 
 
+\begin{itemize}
+    \item Capability Changes: The implementation of the machine learning model will introduce new capabilities such as automated analysis of T&C contracts, detection of deceptive or unclear clauses, and explanations for detected clauses. While the original system relied on manual inspection and comprehension of contract clauses, the new system will automate this process, significantly reducing the time and effort required to review contracts. Moreover, it would be cost effective for those individuals who otherwise, would not abe able to affort professional legal opinion.
+    \item System Processing Changes: The machine learning model process the uploaded contracts, analyze the clauses, and output results indicating the presence of any deceptive clauses along with explanations for the same. 
+    \item  Interface Changes: The user interface will be modified to allow users to upload contracts and view results. This interface will need to be intuitive and user-friendly, providing clear instructions on how to upload contracts and view results. Changes to the interface will also need to accommodate the presentation of results, which will now include highlighted clauses and their explanations.
+    \item Personnel Changes: The development and maintenance of the machine learning model will require personnel with expertise in machine learning, natural language processing, and contract law. Additionally, user training may be required to educate users on how to interact with the new system and interpret its outputs.
+    \item Personnel Changes: The development and maintenance of the machine learning model will require personnel with expertise in machine learning, natural language processing, and contract law. Additionally, user training may be required to educate users on how to interact with the new system and interpret its outputs.
+    \item Environment Changes: The implementation of the machine learning model will digitize the contract review process, requiring an operational environment that can support the deployment and use of this technology. This may involve changes to existing IT infrastructure and the adoption of new technologies to support the model.
+    \item Operational Changes: The introduction of the machine learning model will fundamentally change how contracts are reviewed traditionally. Instead of manually reading through contracts, users will upload them to the system for analysis. This will change the operational procedures and daily work routines of the users.
+    \item Support Changes: The implementation of the machine learning model will necessitate changes in the support requirements. Technical support will need to be available to address any issues that arise with the use of the machine learning model. Moreover, regular updates and maintenance will be required to ensure the model remains up-to-date with changes in contract law.
+    \item Other Changes: As a result of the implementation of the machine learning model, there may be changes to the time required to review contracts. As the process becomes more automated, it is likely that contract review times will be significantly reduced, allowing for quicker decision-making, faster legal processes and reduction in the cost of paralegal teams. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{itemize}
 
 
 \section{Priorities among changes \label{Section::Priorities among changes}}
+The proorites for the system ClauseGuard are highlighted below: 
+\begin{itemize}
+    \item Essential Features: \begin{itemize}
+        \item The core feature of the system is its ability to identify and highlight potentially fraudulent clauses within a contract. Without this feature, the system would not serve its primary purpose. Failure to implement this would lead to users not being able to identify potential risks in contracts.
+        \item The system should be able to assign a risk percentage to each contract, indicating the level of potential fraud. This is vital as it quantifies the risk involved, aiding users in their decision-making process.
+
+
+        \item Each identified risk should come with an explanation to help users understand the reasons why the clause has been flagged as fraudulent. Without this feature, users may be left confused about the nature of the risk involved.
+
+
+       
+        
+
+
+
+
+    \end{itemize} 
+
+    \item Desirable Features: 
+    \begin{itemize}
+        \item While not essential, having an intuitive and easy-to-use interface would greatly enhance user experience, encouraging more frequent use and increasing user satisfaction.
+
+        \item The ability to integrate with common document management systems would make the application more versatile and convenient to use. It would allow users to directly upload contracts for analysis from a wide range of document format systems.
+
+        \item  An ability to analyze and present a comparison of risk percentages. This feature would provide users with an onjective metric along with an explaination of why that specific clause was highlighted intended to allow the user to make an informed decision. The decision, ultimately, is left upto the descretion of the user. 
+
+    \end{itemize}
+
+    \item Optional Features: 
+    \begin{itemize}
+        \item The ability to process and analyze contracts in multiple languages would increase the usability of the system across different geographic locations and allow for greater control over the scanned documents.
+        \item A feature that allows multiple users to view and discuss the same contract in real-time. This can facilitate faster decision-making, especially in larger teams similar to that of what the platform "Overleaf" does for LaTeX documents.
+        \item Providing API access would allow third-party developers to integrate ClauseGuard's features into their own applications.
+        \item Allowing users to directly sign off on safe contracts via popular e-signature platforms could streamline the contract approval process such as adobe signature. 
+        \item A feature that allows users to customize the risk percentage threshold that triggers a flag, enabling a more personalized user experience.
+        \item  feature that tracks and displays changes made to a contract over time, helping users see how the risk assessment has evolved.
+
+    \end{itemize}
+
+\end{itemize}
 
 
 
 
 \section{Changes considered but not included \label{Section::Changes considered but not included}}
+Some features that were considered for ClauseGuard but were not included as follows: 
+\begin{itemize}
+    \item A Real-Time Fraud Detection feature would have allowed the system to analyze contracts and detect fraudulent clauses as the user is typing or editing the contract. However, due to the significant computational resources required for real-time analysis and the potential disruption to the user experience due to lag or delay, this feature was not included.
+    \item A feature for automatic contract modification which would allow the system to suggest modifications to contracts to eliminate or mitigate the risk of identified fraudulent clauses. However, this was not included due to the potential legal implications and the complexity of accurately generating legally sound contract language.
+    \item An AI chatbot feature was considered to provide immediate assistance to users. However, due to the complexity of developing a chatbot that can accurately understand and respond to a wide range of user queries, this feature was not included.
 
 
+
+
+\end{itemize}
+Note: Although the above features are not included at this time of development, these are features that could be looked at to add on at a later stage of ClauseGuard's life cycle. 
+
+\section{ Assumptions and Constraints \label{Section::Assumptions and Constraints}}
+The assumtions and constraints of clauseguard are as follows:
+\begin{itemize}
+    \item Assumptions: An assumption is defined as a condition that is taken to be true. Some of the assumptions for ClauseGuard are: 
+    \begin{itemize}
+        \item Data Availability: We assume that the system will have access to a sufficient number of sample contracts with and without fraudulent clauses for training the machine learning model.
+        \item User Literacy: We assume that users have a basic understanding of contractual language and terms, as this will influence how they interact with the system and interpret the risk assessments.
+        \item Scalability: We assume that the number of contracts to be analyzed will increase over time as more users adopt the system, necessitating a scalable architecture.
+        \item Legal Compliance: We assume that all analyzed contracts will be in compliance with local laws and regulations, which the system will need to be updated to reflect.
+
+
+
+
+
+
+    \end{itemize}
+    \item Constraints: A constraint can be defined as an externally imposed limitation placed on the new or modified system or the processes used to develop
+or modify the system. Some of the constraints of ClauseGuard are as follows: 
+\begin{itemize}
+    \item Budgetary Constraints: The development and maintenance of the system is subject to the availability of funds. This might limit the number of features that can be implemented at a given time.
+    \item Time Constraints: The system must be developed and made operational within a specified timeframe. This could limit the amount of testing and refinement that can be done before launch.
+    \item Privacy Constraints: The system must comply with data privacy laws and regulations, such as GDPR. This could limit the type of data that can be collected and how it can be used. The system must also take into account some countires that are cut off from the rest of the world such as Russia, Azerbaijan, Kyrgyzstan etc. 
+
+
+\end{itemize}
+\end{itemize}
 
