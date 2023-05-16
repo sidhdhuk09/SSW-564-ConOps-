@@ -6,7 +6,7 @@
 \section{Mission Statement \label{Section::Mission Statement} }
 The primary purpose of this project is to protect stakeholders from falling victim to deceptive clauses in contracts that may undermine their best interests, either intentionally or unintentionally or via other disruptive means. These clauses could cause harm to the signing party through various means, such as monetary loss or other negative consequences that may impact the livelihood of the concerned stakeholder as a whole. 
 
-\section{Key Stakeholders \label{Section::Key Stakeholders} }
+\section{Key Stakeholders \cite{DMuresanStakeholders} \label{Section::Key Stakeholders} }
 The key stakeholders for our project are as follows: 
 \begin{itemize}
     \item Direct daily consumers: Direct daily customers are individuals who want to protect themselves against being misled by fraudulent companies. By identifying potentially fraudulent phrases in contracts, Clauseguard adds an extra degree of security for these clients. Direct daily clients who utilize Clauseguard can be secure that they are getting fair deals and can stay out of trouble by doing so.
@@ -18,7 +18,7 @@ The key stakeholders for our project are as follows:
 
 
 
-\section{Key Drivers \label{Section::Key Drivers} }
+\section{Key Drivers \cite{DMuresanRequirements} \label{Section::Key Drivers} }
 The key drivers for our project ClauseGuard are as follows: 
 \begin{itemize}
     \item Data Availability: A large dataset of already available online documents helped bring this project to fruition. Although a large dataset is present, the average person would need extensive knowledge in legal studies to understand the implications of it. 
@@ -35,7 +35,7 @@ Such legal changes drive the need for a software like ClauseGuard. Its sophistic
 
 
 
-\section{Key Constraints \label{Section::Key Constraints} }
+\section{Key Constraints \cite{DMuresanUserreq} \label{Section::Key Constraints} }
 
 \begin{itemize}
     \item Data Privacy and Security: The ClauseGuard system will be dealing with potentially sensitive and confidential documents. It is crucial that the system maintains the privacy and security of these documents, ensuring that the data is not misused or accessed by unauthorized individuals.
@@ -46,7 +46,7 @@ Such legal changes drive the need for a software like ClauseGuard. Its sophistic
     \item  Transparency and Explainability: In addition to identifying potentially fraudulent clauses, the system must provide understandable explanations for its decisions. This requirement for transparency and explainability can add complexity to the model development process.
     \end{itemize}
 
-\section{Key Requirements \label{Section::Key Requirements}}
+\section{Key Requirements \cite{DMuresanBusinessreq} \label{Section::Key Requirements}}
 
 \begin{itemize}
     \item User Requirements: Some of the user Requirements that we've identified when conducting interviews are given below: 
@@ -78,7 +78,7 @@ Such legal changes drive the need for a software like ClauseGuard. Its sophistic
     \begin{itemize}
         \item The model must adhere to all relevant legal systems and regulatory bodies. This extends to maintaining compliance with laws and regulations related to confidential data. As laws vary globally, the model must have the capacity to adapt and adjust to diverse legal environments and requirements.
         \item The model should be designed with a flexible and robust Application Programming Interface (API) to facilitate seamless integration with various systems used across the industry. This would ensure that the model can be smoothly incorporated into existing infrastructures, enhancing its utility and accessibility.
-        \item The model must be equipped with robust security measures to protect against data breaches and security leaks. We've identified that leveraging cloud-based infrastructure systems such as Amazon Web Services (AWS), along with their key management services, will provide a robust security framework for the system.
+        \item The model must be equipped with robust security measures to protect against data breaches and security leaks. We've identified that leveraging cloud-based infrastructure systems such as Amazon Web Services (AWS)\cite{aws}, along with their key management services, will provide a robust security framework for the system.
         \item Beyond explaining why certain clauses are flagged, the model should offer an option for a more technical breakdown of its decision-making process. This interpretability feature would be particularly useful for legal experts and system administrators seeking to understand the underlying mechanics of the model's decisions.
         \item The model should be equipped to handle batch processing of multiple contracts at once. This feature would be crucial for businesses or legal entities dealing with a large volume of contracts.
         \item The system should be capable of extracting and managing relevant metadata from the contracts, such as dates, involved parties, and contract types. This would support advanced analysis and tracking of contract features over time.
@@ -100,11 +100,11 @@ Such legal changes drive the need for a software like ClauseGuard. Its sophistic
     \end{itemize}
     \item Systems Requirements: 
     \begin{itemize}
-        \item The system will incorporate automated monitoring tools to alert administrators about any performance issues, potential system failures, or security threats. Coverity is one such tool that can quickly identify any defects in code and suggest improvements to fix those defects. 
+        \item The system will incorporate automated monitoring tools to alert administrators about any performance issues, potential system failures, or security threats. Coverity\cite{coverity} is one such tool that can quickly identify any defects in code and suggest improvements to fix those defects. 
         \item While the system will support documents in varying formats such as PDF, Word, and LaTeX, it must also be capable of handling other less common but industry-relevant formats, like RTF.
         \item The system must have the ability to handle variable load patterns effectively. This includes peak periods when there might be a surge in the number of contracts being uploaded for review. This can be achieved by the introduction of load balancers.
         \item The system shall efficiently manage computational resources, ensuring optimal utilization of available resources even during peak load times.
-        \item The system must be designed to handle potential future data migration or system upgrades without significant downtime or data loss. This can be achieved by using A centralized backup system such as Velero which can be used as a data migration tool and recovery in case of a primary system failure. 
+        \item The system must be designed to handle potential future data migration or system upgrades without significant downtime or data loss. This can be achieved by using A centralized backup system such as Velero\cite{velero} which can be used as a data migration tool and recovery in case of a primary system failure. 
 
 
 
@@ -162,7 +162,7 @@ Such legal changes drive the need for a software like ClauseGuard. Its sophistic
 
 
 
-\section{Requirements Elicitation Process \label{Section::Requirements Elicitation Process} }
+\section{Requirements Elicitation Process \cite{DMuresanReqelicitation}\label{Section::Requirements Elicitation Process} }
 For the interviews, we decided to use the following elicitation techniques: 
 \begin{itemize}
     \item Brainstorming: We held informal meetings with the potential stakeholders and conducted interviews asking informal questions. 
@@ -171,7 +171,7 @@ For the interviews, we decided to use the following elicitation techniques:
 \end{itemize}
 
 
-\section{ Requirement Validation and Analysis \label{Section::Requirement Validation and Analysis} }
+\section{ Requirement Validation and Analysis \cite{DMuresanRequirements}\label{Section::Requirement Validation and Analysis} }
 The requirements validation and analysis for ClauseGuard is as follows: 
 \begin{itemize}
     \item First we developed a simplified prototype of the system to demonstrate the working of the system. Then we confirmed the requirements from the stakeholders where they were accurate or not. 
@@ -181,7 +181,7 @@ The requirements validation and analysis for ClauseGuard is as follows:
     \end{itemize}
 
     
-\section{ User Interviews \label{Section::User Interviews} }
+\section{ User Interviews \cite{DMuresanReqelicitation} \label{Section::User Interviews} }
 We conducted user interviews with the following stakeholders. We used brainstorming, user stories and questionnaires to elicit requirements from the users which is highlighted below: 
 
 \begin{itemize}
@@ -406,21 +406,64 @@ We conducted user interviews with the following stakeholders. We used brainstorm
 \end{figure}
 
 
-    For Corporate lawyer, and law enforcement agency, we were unable to get any appointments for interviews. Hence, we asked chatgpt to act as a stakeholder. The conversations of those are given below: 
+    For Corporate lawyer, and law enforcement agency, we were unable to get any appointments for interviews. Hence, we asked chatgpt \cite{chatgpt} to act as a stakeholder. The conversations of those are given below: 
+\begin{itemize}
+     
+        \item Corporate Lawyer:  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/gpt lawyer.jpeg}
+    \caption{ChatGPT as Lawyer-1 \ref{fig::gpt lawyer}}
+    \label{fig::gpt lawyer}
+\end{figure}
 
-    \begin{itemize}
-        \item Corporate Lawyer: 
+
+  
+          \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.53]{Figures/gpt new lawyer-3.png}
+    \caption{ChatGPT\cite{chatgpt} as Lawyer-2 \ref{fig::gpt new lawyer-3}}
+    \label{fig::gpt new lawyer-3}
+\end{figure}
+
+
+          \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.53]{Figures/gpt new 2 lawyer-3.png}
+    \caption{ ChatGPT\cite{chatgpt} as Lawyer-3 \ref{fig::gpt new 2 lawyer-3}}
+    \label{fig::gpt new 2 lawyer-3}
+\end{figure}
+
+
+          
+
+
+          \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.53]{Figures/gpt 3 law enforcement-1.png}
+    \caption{ ChatGPT\cite{chatgpt} as Law Enforcement-1 \ref{fig::gpt 3 law enforcement-1}}
+    \label{fig::gpt 3 law enforcement-1}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.53]{Figures/gpt 4 law enforcement.png}
+    \caption{ ChatGPT\cite{chatgpt} as Law Enforcement-2 \ref{fig::gpt 4 law enforcement}}
+    \label{fig::gpt 4 law enforcement}
+\end{figure}
+
+
     \end{itemize}
 
 
     
-\section{ Jira:Project Management Tool \label{Jira Project Management Tool} }
+\section{ Jira:Project Management Tool \cite{jira} \label{Section::Jira Project Management Tool} }
 Our team has used Jira which a project management tool to assign tasks and finish them on a weekly basis using sprints. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.43]{Figures/Jira all completed tasks.jpg}
-    \caption{Jira completion of tasks \ref{fig::Jira all completed tasks}}
+    \caption{ Jira completion of tasks \ref{fig::Jira all completed tasks}}
     \label{fig::Jira all completed tasks}
 \end{figure}
 
@@ -428,19 +471,25 @@ Our team has used Jira which a project management tool to assign tasks and finis
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.43]{Figures/All tasks completed.jpg}
-    \caption{Jira completion of tasks \ref{fig::All tasks completed.jpg}}
+    \caption{ Jira completion of tasks \ref{fig::All tasks completed.jpg}}
     \label{fig::All tasks completed.jpg}
 \end{figure}
 
 
 
-\section{ Github:Version Tracking Tool \label{Github Version Tracking Tool} }
+\section{  Github:Version Tracking Tool \cite{github}\label{Section::Github Version Tracking Tool} }
 
 Our team used github for induce version changes and track previous versions. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.43]{Figures/github update-1.jpg}
-    \caption{Jira completion of tasks \ref{fig::github update-1.jpg}}
+    \caption{Github Tracking-1 \ref{fig::github update-1.jpg}}
     \label{fig::github update-1.jpg}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.43]{Figures/github update-2.jpg}
+    \caption{ Github Tracking-2 \ref{fig::github update-2.jpg}}
+    \label{fig::github update-2.jpg}
 \end{figure}

@@ -3,3 +3,47 @@
 \index{Chapter!Appendices }
 \index{Appendices}
 \label{Chapter::Appendices}}\
+
+
+\begin{itemize}
+        \item Appendix A: Diagram of the proposed system
+        \begin{itemize}
+            \item Description: The provided diagram illustrates the proposed system's operational workflow for ClauseGuard, our contract analysis tool. It encompasses a five-step process that clearly delineates the entire functionality of the system.
+            \begin{itemize}
+                \item Document Upload: The user initiates the process by uploading a legal document for analysis. This is an interactive step where user participation is critical.
+
+                \item Preprocessing: Following the upload, the system undertakes a preprocessing phase. This phase involves cleaning and formatting the raw text of the uploaded document to ensure it's in a format suitable for subsequent analysis.
+
+                \item Feature Extraction: Post preprocessing, the system extracts essential features from the text. This crucial step allows the machine learning algorithm to identify potential patterns, irregularities, or red flags within the document.
+
+                \item Model Training and Testing: While the document is being analyzed, the machine learning model undergoes continuous training and testing. It refines its ability to detect deceptive clauses and improve overall accuracy and performance.
+
+                \item Contract Evaluation: The model evaluates the contract using the extracted features and the knowledge it has gained from training. It applies learned patterns to the new document, identifying any potentially deceptive clauses.
+
+                \item Result Generation: Finally, the system generates comprehensive results. It highlights potentially harmful clauses, offers an explanation for each flagged section, and presents an overall risk score for the contract.
+
+
+            \end{itemize}
+    \end{itemize}
+
+    \item Appendix B: State Machine diagram of the proposed system. 
+        \begin{itemize}
+            \item Description: The State Machine Diagram presents a high-level visual representation of the ClauseGuard system's operational flow. This diagram illustrates the progression of the system's state, driven by specific events or conditions, thereby defining the sequence of operations in an easy-to-understand manner.
+            \begin{itemize}
+                \item Start State: The initial state of the system is a standby mode, wherein the system awaits user input. This state represents the system's readiness to analyze a document.
+                \item Document Upload: The transition from the standby mode is triggered by a user action - uploading a document for analysis. Once the file is uploaded, the system initiates the process of analyzing the input.
+                \item Document Analysis: The system transitions to the analysis state, where the machine learning model scrutinizes the document. This stage is critical as the model applies its trained knowledge to identify potential deceptive clauses.
+                \item Branching States - Fraud Detected or Not Detected: Upon completion of the analysis, the system transitions into one of two states, depending on the model's findings.
+                \begin{itemize}
+                    \item Fraud Detected: If potentially deceptive clauses are identified, the system transitions to a state where these findings are displayed to the user. The user is provided with highlighted sections of the document and explanations for the flags. Upon reviewing the results, the user can choose to exit the checking process or proceed to analyze another document.
+                    \item No Fraud Detected: If no deceptive clauses are found, the user is informed of the positive outcome and can choose to exit or continue with the analysis of another document.
+                    
+                \end{itemize}
+                \item Check Again Option: Regardless of the results, the system provides the user with an option to analyze another document. If chosen, the system transitions back to the document upload state, ready to commence a new round of analysis.
+            \end{itemize}
+The state machine diagram serves as a simplified snapshot of the system's functionality, illustrating the system's behavior and its different states in response to varying inputs. It provides a clear picture of how the ClauseGuard system responds and adapts to user interactions, thereby ensuring a comprehensive understanding of the system's operational flow.
+
+
+
+        \end{itemize}
+\end{itemize}
